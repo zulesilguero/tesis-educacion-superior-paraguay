@@ -96,7 +96,7 @@ Las bases oficiales utilizadas provienen de:
 - Consejo Nacional de Educación Superior (CONES)
 - Instituto Nacional de Estadística (INE)
 
-Debido a restricciones de tamaño y actualización permanente, algunas bases de datos originales no se incluyen en este repositorio. No obstante, el pipeline puede ejecutarse nuevamente utilizando las versiones oficiales disponibles.
+Debido a restricciones de tamaño y actualización permanente, algunas bases de datos originales no se incluyen en este repositorio. No obstante, el pipeline puede ejecutarse nuevamente utilizando las versiones oficiales disponibles en el siguiente enlace: https://datos.mec.gov.py/data/rnc
 
 ---
 

@@ -1,43 +1,39 @@
 # 🎓 Modelado Territorial de la Oferta de Educación Superior en Paraguay mediante Ciencia de Datos
 
 ## Trabajo Final de Maestría
-
 **Universidad Comunera**
-
 **Maestría en Ciencia de Datos**
 
 ### Autoras
-
 - Mónica Leticia Fleitas Guillén
 - Zulema María Silguero Estigarribia
 
 ### Tutora
-
 D.Sc. Margarita Ruiz
 
 ---
 
-# Descripción
+## Descripción
 
-Este repositorio contiene el código fuente, los datos de apoyo, las figuras, los mapas y los resultados utilizados para desarrollar la investigación:
+Este repositorio contiene el código fuente, los datos de apoyo cuya redistribución está permitida, y la documentación metodológica utilizados para desarrollar la investigación:
 
 > **"Modelado Territorial de la Oferta de Educación Superior en Paraguay mediante Ciencia de Datos"**
 
-El estudio propone una metodología reproducible para evaluar la distribución territorial de la oferta académica, medir su cobertura, analizar su pertinencia respecto de los ejes productivos departamentales y proyectar la demanda potencial mediante técnicas de análisis de datos.
+El estudio propone una metodología reproducible y descriptiva para evaluar la distribución territorial de la oferta académica presencial, medir su cobertura relativa frente a la población joven, analizar su pertinencia respecto de los ejes productivos departamentales, y examinar la evolución de las brechas de oferta a partir de las proyecciones demográficas oficiales del INE.
 
 ---
 
-# Objetivos
+## Objetivos
 
 - Analizar la distribución territorial de la oferta de educación superior.
-- Calcular indicadores de cobertura educativa.
-- Evaluar la pertinencia territorial de la oferta.
-- Proyectar la demanda potencial de educación superior.
+- Calcular el Índice de Cobertura Relativa (IC) por departamento.
+- Evaluar la pertinencia territorial de la oferta frente a los ejes productivos.
+- Analizar la evolución de la demanda potencial (población de 15 a 29 años) mediante las proyecciones oficiales del INE, 2022–2032.
 - Identificar departamentos prioritarios mediante el Índice de Prioridad Territorial Educativa (IPTE).
 
 ---
 
-# Metodología
+## Metodología
 
 El pipeline fue desarrollado en Python utilizando:
 
@@ -45,67 +41,24 @@ El pipeline fue desarrollado en Python utilizando:
 - NumPy
 - Matplotlib
 - Scikit-Learn
-- Folium
+- SciPy (clustering jerárquico)
+- GeoPandas / Folium
+- libpysal / esda (Índice de Moran)
 - OpenPyXL
 
 Las principales técnicas implementadas incluyen:
 
-- Regresión Lineal
-- Clustering K-Means
-- Coeficiente de Silueta
-- Método del Codo
+- Clustering K-Means y clustering jerárquico aglomerativo (HAC-Ward)
+- Selección del número de conglomerados mediante método del codo y coeficiente de silueta
+- Índice Global de Moran (autocorrelación espacial)
 - Normalización Min-Max
-- Índice de Cobertura Territorial
+- Índice de Cobertura Relativa (IC)
+- Índice de Herfindahl-Hirschman (diversidad disciplinar)
 - Score de Pertinencia Territorial
 - Índice de Prioridad Territorial Educativa (IPTE)
 
----
-
-# Estructura del repositorio
-
-```
-data/
-figures/
-maps/
-notebooks/
-outputs/
-```
+El estudio es exploratorio-evaluativo, descriptivo y prospectivo. **No se ajusta ningún modelo de regresión ni se elaboran proyecciones demográficas propias**; el análisis prospectivo utiliza exclusivamente las Estimaciones y Proyecciones Departamentales oficiales del INE (Revisión 2025).
 
 ---
 
-# Resultados obtenidos
-
-El proyecto genera automáticamente:
-
-- Distribución territorial de la oferta académica.
-- Índice de cobertura por departamento.
-- Score de pertinencia territorial.
-- Clustering departamental.
-- Proyección de demanda potencial.
-- Ranking del Índice de Prioridad Territorial Educativa (IPTE).
-- Mapas interactivos.
-
----
-
-# Reproducibilidad
-
-La investigación fue desarrollada siguiendo principios de ciencia reproducible.
-
-Las bases oficiales utilizadas provienen de:
-
-- Consejo Nacional de Educación Superior (CONES)
-- Instituto Nacional de Estadística (INE)
-
-Debido a restricciones de tamaño y actualización permanente, algunas bases de datos originales no se incluyen en este repositorio. No obstante, el pipeline puede ejecutarse nuevamente utilizando las versiones oficiales disponibles en el siguiente enlace: https://datos.mec.gov.py/data/rnc
-
----
-
-# Licencia
-
-MIT License
-
----
-
-# Año
-
-2026
+## Estructura del repositorio

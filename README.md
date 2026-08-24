@@ -64,3 +64,47 @@ El estudio es exploratorio-evaluativo, descriptivo y prospectivo. **No se ajusta
 ## Estructura del repositorio
 data/
 notebooks/
+
+
+---
+
+## Resultados obtenidos
+
+El pipeline genera:
+
+- Distribución territorial de la oferta académica por modalidad y área disciplinaria.
+- Índice de Cobertura Relativa por departamento y clasificación por cuartiles.
+- Score de pertinencia territorial por departamento.
+- Segmentación territorial mediante clustering (K-means y HAC-Ward).
+- Análisis de brechas de oferta bajo escenario de oferta constante, 2022–2032.
+- Ranking del Índice de Prioridad Territorial Educativa (IPTE).
+- Mapas interactivos y figuras estáticas.
+
+📁 **Resultados completos (CSV, figuras y mapas):** [https://drive.google.com/file/d/13jJth3MJV9lzAKQQujsL24svC8TqGSbs/view?usp=drive_link]
+
+---
+
+## Reproducibilidad
+
+La investigación fue desarrollada siguiendo principios de ciencia reproducible. Las bases oficiales utilizadas provienen de:
+
+- Consejo Nacional de Educación Superior (CONES) — Registro Nacional de Carreras
+- Instituto Nacional de Estadística (INE) — Censo Nacional de Población y Viviendas 2022 y Estimaciones y Proyecciones Departamentales, Revisión 2025
+- Instituto Geográfico Nacional (IGN) — cartografía departamental
+
+Debido a restricciones de tamaño y a la actualización permanente de las fuentes oficiales, algunas bases de datos originales no se incluyen en este repositorio. El pipeline puede ejecutarse nuevamente utilizando las versiones oficiales disponibles en:
+
+- Registro Nacional de Carreras (CONES/MEC): https://datos.mec.gov.py/data/rnc
+- Portal de Datos Abiertos del INE (Censo 2022 y proyecciones departamentales): https://www.datos.gov.py
+
+---
+
+## Licencia
+
+MIT License
+
+---
+
+## Año
+
+2026

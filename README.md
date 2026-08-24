@@ -62,3 +62,5 @@ El estudio es exploratorio-evaluativo, descriptivo y prospectivo. **No se ajusta
 ---
 
 ## Estructura del repositorio
+data/
+notebooks/

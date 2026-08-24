@@ -95,7 +95,7 @@ La investigación fue desarrollada siguiendo principios de ciencia reproducible.
 Debido a restricciones de tamaño y a la actualización permanente de las fuentes oficiales, algunas bases de datos originales no se incluyen en este repositorio. El pipeline puede ejecutarse nuevamente utilizando las versiones oficiales disponibles en:
 
 - Registro Nacional de Carreras (CONES/MEC): https://datos.mec.gov.py/data/rnc
-- Portal de Datos Abiertos del INE (Censo 2022 y proyecciones departamentales): https://www.datos.gov.py
+- Portal de Datos Abiertos del INE (Censo 2022 y proyecciones departamentales): https://www.ine.gov.py/
 
 ---
 
